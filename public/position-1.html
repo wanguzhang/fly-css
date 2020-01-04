@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X - UA - Compatible " content="ie = edge ">
+    <title>position 研究</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+
+        .demo1 {
+            background-color: red;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .demo2 {
+            background-color: green;
+        }
+
+        .demo3 {
+            background-color: red;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .demo4 {
+            background-color: green;
+        }
+
+
+
+        .container1 {
+            height: 500px;
+            border-color: blueviolet;
+            border-style: dashed;
+        }
+
+        .container2 {
+            display: flex;
+            height: 400px;
+            position: relative;
+            border-color: blueviolet;
+            border-style: dashed;
+            top: 20px;
+        }
+
+        .container3 {
+            height: 500px;
+            border-color: yellow;
+            border-style: dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="box demo1">添加 position: absolute;</div>
+        <div class="box demo2"></div>
+    </div>
+    <div class="container2">
+        <div class="box demo3">position: relative;</div>
+        <div class="box demo4"></div>
+        <div class="box demo5"></div>
+    </div>
+    <div class="container3"></div>
+</body>
+
+</html>

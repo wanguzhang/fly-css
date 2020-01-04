@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X - UA - Compatible " content="ie = edge ">
+    <title>background-clip</title>
+    <style>
+        /**
+        * Translucent borders
+        */
+
+        body {
+            background: url('/public/pic/stone-art.jpg');
+            /* background: url('http://csssecrets.io/images/stone-art.jpg'); */
+        }
+
+        .demo1 {
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            background: white;
+            /* 背景色不蔓延到 border  */
+            background-clip: padding-box;
+            /* background-clip: border-box; */
+        }
+
+        /* .container {
+            background: red;
+            height: 500px;
+            width: 200px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="demo1">
+        Can I haz semi-transparent borders?
+        Pretty please?
+        </dvi>
+</body>
+
+</html>
