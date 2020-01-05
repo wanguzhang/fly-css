@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X - UA - Compatible " content="ie = edge ">
+    <title>toolbar 学习</title>
+    <style>
+        .toolbar {
+            height: 45px;
+            width: 45px;
+            background-image: url(./pic/toolbar.png);
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .wx {
+            background-position: -4px -800px;
+        }
+
+        .wx:hover {
+            background-position: -4px -860px;
+        }
+
+        .message {
+            background-position: -4px -430px;
+        }
+
+        .message:hover {
+            background-position: -4px -490px;
+        }
+
+        .download {
+            background-position: -4px -550px;
+        }
+
+        .download:hover {
+            background-position: -4px -610px;
+        }
+
+        .top {
+            background-position: -4px -680px;
+        }
+
+        .top:hover {
+            background-position: -4px -740px;
+        }
+
+        .container {
+            position: relative;
+            left: 400px;
+            top: 500px;
+        }
+
+        .bar {
+            height: 155px;
+            width: 138px;
+            background-image: url(./pic/toolbar.png);
+            position: absolute;
+            bottom: 2px;
+            right: 45px;
+            opacity: 0;
+            transition: opacity 1s linear;
+        }
+
+        .bar-wx {
+            background-position: -12px -165;
+        }
+
+        .wx:hover .bar-wx {
+            opacity: 100%;
+        }
+
+        .bar-download {
+            opacity: 0;
+            background-position: -12px -251px;
+        }
+
+        .download:hover .bar-download {
+            opacity: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="toolbar wx">
+            <span class="bar bar-wx"></span>
+        </div>
+        <div class="toolbar message"></div>
+        <div class="toolbar download">
+            <span class="bar bar-download"></span>
+        </div>
+        <div class="toolbar top"></div>
+    </div>
+</body>
+
+</html>

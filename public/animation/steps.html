@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X - UA - Compatible " content="ie = edge ">
+    <title>step 练习</title>
+    <style>
+        .box {
+            background: url('../pic/loading.png') no-repeat;
+            width: 230px;
+            height: 230px;
+            animation: run 1s steps(10) infinite;
+        }
+
+        @keyframes run {
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <script>
+        const box = document.querySelector('.box');
+        box.addEventListener('animationstart', () => {
+            console.log('开始');
+        });
+        box.addEventListener('animationend', () => {
+            console.log('结束');
+        });
+    </script>
+</body>
+
+</html>
