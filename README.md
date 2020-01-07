@@ -36,3 +36,14 @@ background-clip: border-box;
 ```js
 当前脱离文档流
 ```
+
+### box-sizing
+
+```txt
+content width + padding + border = 实际盒子大小
+content height + padding + border = 实际盒子大小
+
+设置盒子的大小是否可以被 padding 和 border 影响。
+
+border-box 会将 content box + border + padding 自适应为 width height
+```
