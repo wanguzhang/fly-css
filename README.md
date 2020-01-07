@@ -11,9 +11,15 @@ color()
 ```css
 conic-gradient
 radial-gradient
+linear-gradient
 background-size
 background-position
 
+```
+## calc()
+
+```css
+calc(100% - 20px)
 ```
 ## background
 
